@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Combe Sébastien</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c821376c9b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Game Développeur</p>
+                <h1><span>Sebastien</span> <br>Combe</h1>
+            </div>
+        </div>
+    </div>
+
+
+<!-----------about me----------->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/P1000902.RW2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionné de jeux vidéo, j'ai pour objectif de travailler dans ce domaine. Le BUT informatique graphique est la première étape de mon voyage</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Compétences</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Parcours scolaire</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Unity</span><br>Développeur unity 3D/2D</li>
+                            <li><span>Unreal</span><br>Développeur Unreal 3D</li>
+                            <li><span>C++/C#</span><br>Developpeur logiciel</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2019</span><br>Developpeur Alstom (stage seconde)</li>
+                            <li><span>2024</span><br>Developpeur logciel Alstom (stage deuxième année BUT)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Baccalauréat</li>
+                            <li><span>2022-2025</span><br>BUT Informatique Graphique site Puy en Velay</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+<!-----------services----------->
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Compétences</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-unity"></i>
+                <h2>Développeur Unity</h2>
+                <p>Principale compétence, illustré à travers de nombreux projets que se sois en 2D ou en 3D, en passant de platformer 2D à un jeu en 3D d'infiltration </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Développeur web</h2>
+                <p>Maitrise d'html, css, php et javascript.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file"></i>
+                <h2>Développeur logiciel</h2>
+                <p>Compétences dans de nombreux langage comme le C++, C# ou encore python, principalement spécialisé dans le développement d'application en C++</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-----------Portfolio----------->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Capture_decran_2024-03-26_115349.png">
+                <div class="layer">
+                    <h3>"Alt F4" - rogue like en 3D</h3>
+                    <p>"Alt F4" est un projet de rogue like en vue 3D isométrique, développé sous unity, le jeu vous permet d'incarner un chevalier qui doit s'échapper d'un donjon.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/IMG_20240525_104242.png">
+                <div class="layer">
+                    <h3>Musée 3D</h3>
+                    <p>Création d'un musée entièrement modélisé par nos soins sous Unreal Engine, mais le musée n'est pas que visuel car il propose de l'intéraction entre le joueur et les oeuvres.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/image.png">
+                <div class="layer">
+                    <h3>"Hidden Shadow" - infiltration</h3>
+                    <p>"Hidden Shadow" est un jeu d'infiltration qui vous propose de vous mettre dans la peau d'une espionne qui doit faire preuve de discrétion.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----------Contact----------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contactez moi</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> sebcombe03@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CVCombeSébastien.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Votre Nom" required>
+                    <input type="email" name="Email" placeholder="Votre Email" required>
+                    <textarea name="Message" rows="6" placeholder="Votre Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sébastien. Made by Sébastien</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+</body>
+</html>
