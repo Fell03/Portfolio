@@ -176,6 +176,7 @@ nav ul li a:hover::after{
     font-weight: 300;
     border-radius: 10px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .services-list div i{
@@ -203,6 +204,7 @@ nav ul li a:hover::after{
 }
 
 /*-----------Portfolio-----------*/
+
 #portfolio{
     padding: 50px 0;
 }
@@ -214,17 +216,19 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 
-.work{
+.work {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
     border-radius: 10px;
     position: relative;
-    overflow: hidden;
+    cursor: pointer;
 }
 
-.work img{
+.work img {
     width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 .layer{
@@ -367,3 +371,51 @@ form .btn2{
     color: #ff004f;
 }
 
+.project-section {
+    background: #080808; /* Couleur de fond */
+    padding: 50px 10%;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .project-left {
+    flex: 1;
+    height: 300px;
+    background: #fff; /* Couleur pour contraster */
+    margin-right: 20px;
+  }
+  
+  .project-right {
+    flex: 1;
+    color: #fff;
+  }
+  
+  .project-right h2 {
+    font-size: 36px;
+    color: #ff004f; /* Couleur principale */
+    margin-bottom: 20px;
+  }
+  
+  .project-right p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .project-right .btn2 {
+    background: #ff004f;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+  
+  .project-right .btn2:hover {
+    transform: scale(1.1);
+  }
+  
