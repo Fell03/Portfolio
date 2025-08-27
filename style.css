@@ -17,8 +17,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('images/header-bg.jpg') no-repeat center center/cover;
 }
 
 .container{
@@ -76,6 +75,20 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
     color: #ff004f;
+}
+
+/* Titres */
+h1, h2, h3 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Paragraphes */
+p {
+    line-height: 1.8;
+    font-size: 16px;
+    color: #ccc;
 }
 
 /*-----------About-----------*/
@@ -170,7 +183,8 @@ nav ul li a:hover::after{
 }
 
 .services-list div{
-    background: #262626;
+    background: linear-gradient(135deg, #262626, #333);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -199,7 +213,8 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #ff004f;
+    background: linear-gradient(135deg, #ff004f, #ff6f61);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transform: translateY(-10px);
 }
 
@@ -229,6 +244,7 @@ nav ul li a:hover::after{
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .layer{
@@ -270,6 +286,7 @@ nav ul li a:hover::after{
 
 .work:hover img{
     transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .work:hover .layer{
@@ -339,9 +356,10 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-form input, form textarea{
+/* Champs du formulaire */
+form input, form textarea {
     width: 100%;
-    border: 0;
+    border: 1px solid #444;
     outline: none;
     background: #262626;
     padding: 15px;
@@ -349,6 +367,13 @@ form input, form textarea{
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ff004f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 0, 79, 0.5);
 }
 
 form .btn2{
@@ -418,4 +443,56 @@ form .btn2{
   .project-right .btn2:hover {
     transform: scale(1.1);
   }
-  
+
+  /* Alignement horizontal et vertical du texte et de l'image */
+.header-content {
+    display: flex;
+    align-items: center; /* Centre verticalement le texte et l'image */
+    justify-content: space-between; /* Espace entre le texte et l'image */
+    margin-top: 50px;
+}
+
+/* Texte dans la section header */
+.header-text {
+    flex: 1;
+    padding-right: 20px; /* Ajoute un espace entre le texte et l'image */
+}
+
+/* Image dans la section header */
+.header-image {
+    flex: 1; /* Permet à l'image de prendre autant d'espace que possible */
+    display: flex;
+    justify-content: center; /* Centre horizontalement l'image dans son conteneur */
+    align-items: center; /* Centre verticalement l'image */
+}
+
+.header-image img {
+    width: 100%; /* L'image occupe toute la largeur disponible */
+    max-width: 800px; /* Limite la taille maximale de l'image */
+    height: auto;
+    border-radius: 10px; /* Ajoute des coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.header-image img:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+}
+
+/* Responsive design pour petits écrans */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Empile le texte et l'image verticalement */
+        text-align: center;
+    }
+
+    .header-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .header-image img {
+        width: 80%; /* Réduit la taille de l'image sur mobile */
+        max-width: 300px; /* Limite la taille maximale sur mobile */
+    }
+}

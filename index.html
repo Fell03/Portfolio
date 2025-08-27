@@ -6,6 +6,43 @@
     <title>Portfolio Combe Sébastien</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c821376c9b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Responsive design */
+        @media (max-width: 768px) {
+            #header .header-text h1 {
+                font-size: 2rem;
+            }
+
+            #about .row {
+                flex-direction: column;
+            }
+
+            #services .services-list {
+                grid-template-columns: 1fr;
+            }
+
+            #portfolio .work-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #header, #about, #services, #portfolio, #contact {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
 </head>
 <body>
     <div id="header">
@@ -20,9 +57,14 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-text">
-                <p>Game Développeur</p>
-                <h1><span>Sebastien</span> <br>Combe</h1>
+            <div class="header-content">
+                <div class="header-text">
+                    <p>Développeur logiciel</p>
+                    <h1><span>Sebastien</span> <br>Combe</h1>
+                </div>
+                <div class="header-image">
+                    <img src="images/P1000902.RW2.jpg" alt="Photo de Sébastien">
+                </div>
             </div>
         </div>
     </div>
@@ -54,12 +96,14 @@
                         <ul>
                             <li><span>2019</span><br>Développeur Alstom (stage seconde)</li>
                             <li><span>2024</span><br>Développeur logiciel Alstom (stage deuxième année BUT)</li>
+                            <li><span>2025</span><br>Développeur contrôle software Alstom (stage troisième année BUT)</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2021</span><br>Baccalauréat</li>
                             <li><span>2022-2025</span><br>BUT Informatique Graphique site du Puy en Velay</li>
+                            <li><span>2025-2027</span><br>Master génie logiciel d'Avignon (en cours)</li>
                         </ul>
                     </div>
                 </div> 
@@ -108,11 +152,14 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/IMG_20240525_104242.png">
+                    <img src="images/Accueil.jpg" alt="Playlist Fraîcheur">
                     <div class="layer">
-                        <h3>Musée 3D</h3>
-                        <p>Création d'un musée entièrement modélisé par nos soins sous Unreal Engine, mais le musée n'est pas que visuel car il propose de l'intéraction entre le joueur et les oeuvres.</p>
-                        <a href="musee3D.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Playlist Fraîcheur</h3>
+                        <p>
+                            "Playlist Fraîcheur" est un plugin Spotify qui génère chaque semaine une playlist unique. 
+                            Elle met en avant des morceaux récents et originaux, échappant aux recommandations classiques de l'algorithme.
+                        </p>
+                        <a href="playlist_fraicheur.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
